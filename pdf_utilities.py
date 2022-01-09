@@ -21,7 +21,7 @@ from pdf2image import convert_from_path
 from PIL import Image
 from progressbar import ProgressBar
 
-# OCR REQUIRES FULL TESSERACT INSTALLATION, and must be added to path:
+# tesseract installation needed only if using optical character recognition (unreliable, unused)
 # see https://pypi.org/project/pytesseract/  -- 'Installation'
 # Can skip this (currently unused) but if result was 'printed to pdf'
 # instead of downloaded at Octavius terminal, requires a visual read and/or manual check (rare)

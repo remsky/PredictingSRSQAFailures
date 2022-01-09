@@ -27,10 +27,8 @@ score_names =  ['Aperture',"MLC02","MLC05","MLC1","MLC2","uniMLC","accMLC02","ac
 n_combos = 5
 combos = list(itertools.combinations(score_names, n_combos))
     
-#running evaluations to find best n-dim 
 scoring = make_scorer(custom_scorer,weight=1)
 results = []
-
 
 def is_percent_close(a, b, thresh=0.10):
     if a == b:
@@ -45,13 +43,12 @@ def is_percent_close(a, b, thresh=0.10):
     else:
         return True
 
-
 for i in combos:
     
     #load and filter
     #features are calcualted metrics to explore 
     #labels are 0:fail 1:pass
-    train_features, test_features, train_labels, test_labels = pd.read_excel("...") , # , # , # 
+    train_features, test_features, train_labels, test_labels = #read_pickle/excel("...") , # , # , # 
     train_features, test_features = train_features.filter(list(i)), test_features.filter(list(i))
     #scaling metrics
     scaler = StandardScaler().fit(train_features)

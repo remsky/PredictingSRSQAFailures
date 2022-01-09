@@ -55,6 +55,3 @@ def make_2d_decision_boundary(model,X,y,feature_labels):
     ax.legend()
     plt.show()
     
-## score collection 
-#
-
